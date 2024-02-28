@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap:100px ;
+    justify-content:space-evenly;
+    align-items:center ;
+    
+    background-image: url(sss.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+form{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 650px;
+    width: 700px;
+    
+    background-color: lightgreen;
+
+    /* margin-left: 451px; */
+    margin-top: 41px; 
+    box-shadow: 5px 10px 25px black;
+}
+
+form .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 600px;
+    margin-left: 15px;
+}
+
+form h1{
+    text-align: center;
+}
+
+form label{
+    font-size: 16px;
+  
+}
+
+form input{
+    font-size: 18px;
+}
+
+
+form .first-name{
+    margin-left:80px ;
+}
+form .last-name{
+    margin-left: 81px;
+}
+form .email{
+    margin-left: 112.5px;
+}
+
+form .number{
+    margin-left: 48px;
+}
+
+form .gender{
+    margin-left: 103px;
+}
+
+form .date{
+    margin-left: 64px;
+    font-size: 15px;
+}
+
+form .address{
+    margin-left: 99px;
+    min-height: 27px;
+    min-width:225px;
+}
+
+form .country{
+    margin-left:100px;
+    font-size:15px;
+}
+
+form .code{
+    margin-left:119px;
+    font-size:15px;
+    
+}
+
+form .city{
+    display: none;
+}
+
+
+
+form .cityName{
+    margin-left:125px;
+    font-size:15px;
+    
+}
+
+form .country-code{
+    display: none;
+}
+form .non-select{
+    display: block;
+}
+
+form .certificate{
+    margin-left: 83px;
+    font-size: 15px;
+}
+
+form img{
+    height: 100px;
+    width: 100px;
+    margin-left:152px ;
+    display: none;
+}
+
+form .sum{
+    width: 85px;
+    padding: 2px 5px;
+    font-size: 15px; 
+    margin-left: 180px;  
+    /* margin-top: px; */
+}
+
+
+form span{
+    color: red;
+    margin-left: 160px;
+}
+
+
+table{
+    /* height: 600px;*/
+    width: 100%; 
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    display: none;
+}
+th{
+    background-color: #eafbe0;
+    border: 2px solid black;
+}
+td{
+    background-color: lightgreen;
+    border: 2px solid black;
+    width: fit-content;
+}
+table th,td{
+    width: 11%;
+    text-align: center;
+    border-collapse: collapse;
+}
+

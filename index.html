@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="registrationForm"  name="myForm" 
+    onsubmit=" event.preventDefault() , validateForm()">
+        <h1>Registration Form</h1>
+        <br>
+        <div class="container">
+            <div id="fname">
+                <label >First Name</label>
+                <input  type="text" name="fName" class="first-name" id="firstName"   maxlength="15" >
+                <br>
+                <span class="formerror"></span>
+                
+            </div>
+            <div id="lName">
+                <label>Last Name</label>
+                <input type="text"  name="lname" class="last-name" id="lastName"  maxlength="15" >
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div>
+            <div id="email">
+                <label>Email</label>
+                <input type="text" name="fEmail"   class="email" id="email"  >
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div>
+            <div id="number">
+                <label>Mobile Number</label>
+                <input type="text"  name="fNumber"class="number" 
+                id="mobileNumber" maxlength="10" >
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div>
+            <div id="checked">
+                <label>Gender</label>
+                <input type="radio" class="gender" name="gender" value="male"> Male
+                <input type="radio"  name="gender" value="female"> Female
+                <input type="radio"  name="gender" value="other"> Other
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div> 
+            <div id="date">
+                <label>Date Of Birth</label>
+                <input type="date" name="fDate" class="date" id="dob"  >
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div>
+            <div id="addresss">
+                <label>Address</label>
+                <textarea class="address" name="fAddress" cols="0"  rows="2" id="address" ></textarea>
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div>
+            <div id="countrys">
+                <label>Country</label>
+                <select class="country" id="country1"  onchange= " showState(), populate(this.value)"  >
+                    <option value="" disabled selected>--Select Country--</option>
+                    <option value="India">India</option>
+                    <option value="America">America</option>
+                </select>
+                <br>
+                <span  class="formerror"></span>
+                <br>
+            </div>
+
+
+            <div id="city" class="city">
+                <label >City</label>
+                <select  class="cityName" id="cityName" >
+                    <option value="" disabled selected>--Select Country--</option>
+                </select>
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div>
+
+
+            <div id="country-code" class="country-code">
+                <label >Code</label>
+                <select  class="code" id="code" >
+                    <option value="">--Select--</option>
+                </select>
+                <br>
+                <span class="formerror"></span>
+                <br>
+            </div>
+
+            <div id="certificates">
+                <label >Certificate</label>
+                <input type="file" name="fCertificate" class="certificate" id="certificate" accept="image/*" >
+
+                <br>
+                <span  class="formerror"></span>
+            </div>
+            <div> <img id="preview-image"></div>
+
+            <button type="submit" value="Submit"  class="sum" >Submit</button>
+        </div>
+    </form>
+    <div id="msg"></div>
+    <table id="tbl" >
+        <thead> 
+            <tr>
+            <th >First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Gender</th>
+            <th>Date Of Birth</th>
+            <th>Address </th>
+            <th>Country </th>
+            <th>City </th>
+            <th>Code </th>
+            <th>Certificate  </th>
+            <th>Action </th>
+           
+           </tr>
+        </thead>
+      
+           <tbody>
+
+           </tbody>
+     
+
+    </table>
+
+</body>
+<script src="script.js"></script>
+
+</html>
